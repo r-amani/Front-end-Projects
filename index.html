@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <!-- <link rel = "stylesheet" href = "quiz.css"> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz</h1>
+        <div class="question">
+            <h2 id = "question">Question</h2>
+        </div>
+        <div class="options">
+            <button class="opt" id = "op1" onclick="checkanswer(this)">Option 1</button>
+            <button class="opt" id = "op2" onclick="checkanswer(this)">Option 3</button>
+            <button class="opt" id = "op3" onclick="checkanswer(this)">Option 2</button>
+            <button class="opt" id = "op4" onclick="checkanswer(this)">Option 4</button>
+        </div>
+    </div>
+    <div id = "progress">
+        <progress id ="bar" value = "0" max = "20"></progress><span id = "qc"> 0/20</span>
+    </div>
+    <button id="start" class = "button">Start</button>
+    <button id="quit" class = "button">Quit</button>
+    <div class = msg>Press start button to start the quiz</div>
+    <script src = "quiz.js"></script>
+    
+</body>
+</html>
